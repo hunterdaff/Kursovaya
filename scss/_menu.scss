@@ -1,0 +1,193 @@
+// ---------------
+// Мобильное меню
+// ---------------
+@mixin menu-font {
+  font-family: 'Golos', serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+$menu-color-overlay: #222058; // Цвет фона оверлея
+$menu-opacity-overlay: 0.99; // Прозрачность фона оверлея
+$menu-color-button: #F7F7F5; // Цвет кнопки "3 полоски"
+$menu-color-active: #F7F7F5; // Цвет кнопки "крестик"
+$menu-color-link: #F7F7F5; // Цвет ссылок в меню
+$menu-button-height: 27px; // Высота кнопки
+$menu-button-width: 35px; // Ширина кнопки
+$menu-button-top: 36px; // Позиция кнопки
+$menu-button-right: 36px; // Позиция кнопки
+//----------------
+
+@media only screen and (max-width: 991px),
+only screen and (max-device-width: 991px) {
+  header .button_container {
+    display: block !important;
+  }
+}
+
+body.overflow {
+  overflow: hidden;
+}
+
+header {
+  .button_container {
+    position: absolute;
+    top: $menu-button-top;
+    right: $menu-button-right;
+    height: $menu-button-height;
+    width: $menu-button-width;
+    cursor: pointer;
+    z-index: 10001;
+    transition: opacity .25s ease;
+    display: none;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &.active {
+      .top {
+        transform: translateY(11px) translateX(0) rotate(45deg);
+        background: $menu-color-active;
+      }
+
+      .middle {
+        opacity: 0;
+        background: $menu-color-active;
+      }
+
+      .bottom {
+        transform: translateY(-11px) translateX(0) rotate(-45deg);
+        background: $menu-color-active;
+      }
+    }
+
+    span {
+      background: $menu-color-button;
+      border: none;
+      height: 5px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .35s ease;
+      cursor: pointer;
+
+      &:nth-of-type(2) {
+        top: 11px;
+      }
+
+      &:nth-of-type(3) {
+        top: 22px;
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    background: $menu-color-overlay;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: 1000;
+
+    &.open {
+      opacity: $menu-opacity-overlay;
+      visibility: visible;
+      height: 100%;
+      z-index: 10000;
+
+      li {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: .35s;
+
+        &:nth-of-type(2) {
+          animation-delay: .4s;
+        }
+
+        &:nth-of-type(3) {
+          animation-delay: .45s;
+        }
+
+        &:nth-of-type(4) {
+          animation-delay: .50s;
+        }
+      }
+    }
+
+    nav {
+      position: relative;
+      height: 70%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-family: 'Varela Round', serif;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      height: 100%;
+      max-width: 90%;
+
+      li {
+        display: block;
+        height: 25%;
+        height: calc(100% / 4);
+        min-height: 50px;
+        position: relative;
+        opacity: 0;
+
+        a {
+          display: block;
+          position: relative;
+          color: $menu-color-link;
+          text-decoration: none;
+          overflow: hidden;
+          @include menu-font;
+
+          &:hover:after,
+          &:focus:after,
+          &:active:after {
+            width: 100%;
+          }
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            transform: translateX(-50%);
+            height: 3px;
+            background: $menu-color-link;
+            transition: .35s;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+}

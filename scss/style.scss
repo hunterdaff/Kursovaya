@@ -1,0 +1,14 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  body {
+    display: block;
+    font-family: "Golos", sans-serif;
+  }
+}
+
+@import "fonts", "menu", "index", "media";

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Golos';
+  src: local('Golos Text Regular'),
+    local('GolosText-Regular'),
+    url('./../fonts/Golostextregular.woff2') format('woff2'),
+    url('./../fonts/Golostextregular.woff') format('woff'),
+    url('./../fonts/Golostextregular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Golos';
+  src: local('Golos Text Bold'),
+    local('GolosText-Bold'),
+    url('./../fonts/Golostextbold.woff2') format('woff2'),
+    url('./../fonts/Golostextbold.woff') format('woff'),
+    url('./../fonts/Golostextbold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
