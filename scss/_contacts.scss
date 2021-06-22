@@ -1,0 +1,92 @@
+#section-contacts {
+    padding-bottom: 40px;
+    padding-top: 34px;
+
+    h2 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 72px;
+        letter-spacing: -0.015em;
+        color: #000000;
+    }
+
+    input,
+    textarea {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 18px;
+        background: #FFF;
+        border: 1px solid #5077FE;
+        letter-spacing: -0.015em;
+        width: 100%;
+        outline: none;
+
+        &::placeholder {
+            font-size: 18px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    textarea {
+        max-height: 120px;
+    }
+
+    .contacts-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line {
+        background: #5077FE;
+        border: 1px solid #F8F8F9;
+        padding: 24px;
+    }
+
+    .line-right {
+        border: 1px solid #5077FE;
+        padding: 24px;
+        border-left: none;
+    }
+
+    .button-gray {
+        margin-top: 0;
+    }
+
+    .contact {
+        font-size: 36px;
+        line-height: 30px;
+        letter-spacing: -0.015em;
+        color: #000000;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+}
+
+#section-map {
+    .map {
+        position: relative;
+    }
+
+    .block-map {
+        position: absolute;
+        top: 212px;
+        left: 135px;
+        background: #FFF;
+        padding: 64px 52px 164px 40px;
+    }
+
+    .text-map {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 80px;
+        letter-spacing: -0.015em;
+        color: #000000;
+    }
+
+    .button-gray {
+        position: absolute;
+
+    }
+}

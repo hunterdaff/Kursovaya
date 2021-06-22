@@ -1,0 +1,64 @@
+.table-content {
+    margin-bottom: 40px;
+}
+
+input {
+    padding: 8px 16px;
+    outline: none;
+    background: #FFF;
+    border: 1px solid #5077FE;
+    width: calc(100% / 2 - 12px);
+
+    &::placeholder {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.015em;
+        color: #333333;
+    }
+}
+
+.input-name {
+    margin-right: 20px;
+}
+
+.data {
+    padding: 8px 16px;
+    outline: none;
+    background: #FFF;
+    border: 1px solid #5077FE;
+    width: 100%;
+
+    &::placeholder {
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.015em;
+        color: #333333;
+    }
+}
+
+.head {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-left: 36px;
+}
+
+.text {
+    font-size: 36px;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 12px;
+}
+
+.col {
+    border: 1px solid #5077FE;
+    width: 33.3333%;
+    padding: 40px 35px;
+}
+
+.button-gray {
+    margin-top: 40px;
+}

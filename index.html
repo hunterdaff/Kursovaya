@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Golos:wght@400;700&display=swap" rel="stylesheet">
-  <link href="./css/lightbox.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link href="./css/lightbox.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link href="./css/modaal.min.css" rel="stylesheet" />
-  <link href="./css/nouislider.min.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
-  <title>Tayfun</title>
+  <title>Выборатория</title>
 </head>
+
 <body>
   <header>
     <nav>
       <div class="container-absolute">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
               <div class="header-content">
-                <div class="header-logo">
-                  <div class="flex">
-                    <a href="/"><img src="./images/icons/logoCompany.svg" alt="логотип"></a>
-                  </div>
+                <div class="flex">
+                  <a class="logo" href="/">ВЫБОРАТОРИЯ</a>
                 </div>
                 <div class="flex menu-block">
                   <ul>
-                    <li><a href="#section-about-us">О нас</a></li>
-                    <li><a href="#section-capabilities">Преимущества</a></li>
-                    <li><a href="#section-sale">Каталог товаров</a></li>
-                    <li><a href="#section-partners">Наши партнеры</a></li>
-                    <li><a href="#section-form">Связаться с нами</a></li>
+                    <li><a href="/contacts.html">контакты</a></li>
+                    <li><a href="/team.html">о нас</a></li>
+                    <li><a href="/events.html">события</a></li>
+                    <li><a href="/cafe.html">кафе</a></li>
                   </ul>
                 </div>
                 <div class="flex phone-block">
-                  <a class="buy" href="#modaal-shop">Позвонить нам</a>
+                  <a href="/main.html" class="button-results">результаты</a>
+                  <a href="/main.html" class="button-record">запись</a>
                 </div>
               </div>
             </div>
@@ -55,1052 +54,188 @@
     <div class="overlay" id="overlay">
       <nav class="overlay-menu">
         <ul>
-          <li><a href="#section-about-us">О нас</a></li>
-          <li><a href="#section-capabilities">Преимущества</a></li>
-          <li><a href="#section-sale">Каталог товаров</a></li>
-          <li><a href="#section-partners">Наши партнеры</a></li>
-          <li><a href="#section-form">Связаться с нами</a></li>
+          <li><a href="/contacts.html">контакты</a></li>
+          <li><a href="/team.html">о нас</a></li>
+          <li><a href="/events.html">события</a></li>
+          <li><a href="/cafe.html">кафе</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <section id="section-hero">
-    <div class="container hero">
-      <div class="row hero align-items-center ">
-        <div class="col-md-7">
-          <h1>Тайфун Маркет</h1>
-          <p class="text-hero">Группа Компаний «Тайфун» - динамичная компания с крепкими традициями и заслуженной
-            репутацией, добросовестного и профессионального партнера, имеет оптимальные размеры и структуру для
-            эффективного решения задач комплексной поставки стройматериалов на объекты.
-            ГК «Тайфун» была образована в 2001 году.</p>
-          <a class="catalog" href="#section-sale">Каталог товаров</a>
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <div class="col-lg-12">
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide ss-1">
+              </div>
+              <div class="swiper-slide ss-2">
+              </div>
+              <div class="swiper-slide ss-3">
+              </div>
+              <div class="swiper-slide ss-4">
+              </div>
+              <div class="swiper-slide ss-5">
+              </div>
+              <div class="swiper-slide ss-6">
+              </div>
+            </div>
+            <div class="btn-block">
+              <a href="/main.html" class="btn">запись</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <section id="section-about-us">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="caption">Кто мы такие?</h2>
-          <p class="text-up">В течение нескольких лет из маленького бизнеса превратилась в холдинг, который имеет
-            представительства в различных городах России: Москва, Нижний Новгород, Краснодар, Череповец, Челябинск,
-            Самара, Казань, Ростов-на-Дону, Ярославль, Рязань. </p>
-          <p class="text-middle"> Имея партнерские отношения непосредственно с крупными производителями строительных
-            материалов, наша компания приятно удивит Вас низкими ценами при оптовой поставке стройматериалов. Наша
-            задача - осуществить комплексную поставку стройматериалов любых объемов и в минимальный срок.
-            При сотрудничестве с нами, у Вас отпадает необходимость искать материалы, поставщиков, оборудование и
-            транспорт для доставки, а также вести переговоры и тратить на все это и так драгоценное время.
-          </p>
-          <p class="text-down"> Мы ценим сложившиеся отношения с нашими клиентами, главными принципами которых являются
-            профессионализм, взаимное уважение и доверие.</p>
-        </div>
-        <div class="col-md-6 logo-tayfun">
-          <img src="./images/logo_tayfun.png" alt="логотип">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="section-capabilities">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="block">
-            <img src="./images/icons/ic-cup.svg" alt="кубок">
-            <div>
-              <h4>Более 10 лет на рынке</h4>
-              <p class="text">Faucibus at vitae diam amet. Auctor rhoncus risus nascetur neque feugiat dui eu gravida
-                porttitor. Accumsan sodales lacus, posuere cras gravida non.</p>
+    <div class="container-fluid">
+      <div class="line">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="block">
+              <h2>О Выборатории</h2>
+              <p class="team">Мы — команда высококлассных специалистов, которым<br> доверяют выбор люди
+                уже
+                многие сотни лет </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="block">
-            <img src="./images/icons/discounts.svg" alt="скидки">
-            <div>
-              <h4>Скидки и акции</h4>
-              <p class="text">Odio integer quis imperdiet amet morbi. Viverra leo suspendisse scelerisque tortor,
-                magna. Quisque mi euismod dictum etiam elementum, odio ullamcorper velit.</p>
-            </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="text-up">13</p>
+            <p class="text-down">Международных наград</p>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="block">
-            <img src="./images/icons/offices.svg" alt="офисы">
-            <div>
-              <h4>Офисы в 20 городах</h4>
-              <p class="text">Faucibus at vitae diam amet. Auctor rhoncus risus nascetur neque feugiat dui eu gravida
-                porttitor. Accumsan sodales lacus, posuere cras gravida non.</p>
-            </div>
+          <div class="col-lg-4">
+            <p class="text-up">342</p>
+            <p class="text-down">Постоянных сотрудника</p>
           </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="block">
-            <img src="./images/icons/support.svg" alt="поддержка">
-            <div>
-              <h4>Техподдержка 24/7</h4>
-              <p class="text">Faucibus at vitae diam amet. Auctor rhoncus risus nascetur neque feugiat dui eu gravida
-                porttitor. Accumsan sodales lacus, posuere cras gravida non.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="block">
-            <img src="./images/icons/delivery.svg" alt="доставка">
-            <div>
-              <h4>Доставка по России</h4>
-              <p class="text">Copy
-                Odio integer quis imperdiet amet morbi. Viverra leo suspendisse scelerisque tortor, magna. Quisque mi
-                euismod dictum etiam elementum, odio ullamcorper velit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="block">
-            <img src="./images/icons/choice.svg" alt="выбор клиента">
-            <div>
-              <h4>Выбор клиента</h4>
-              <p class="text">Faucibus at vitae diam amet. Auctor rhoncus risus nascetur neque feugiat dui eu gravida
-                porttitor. Accumsan sodales lacus, posuere cras gravida non.</p>
-            </div>
+          <div class="col-lg-4">
+            <p class="text-up">16</p>
+            <p class="text-down">Филиалов по миру</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="section-sale">
-    <div class="container">
+  <section id="section-work">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
-          <h2 class="caption">Что мы продаем?</h2>
-          <p class="text">Ut duis faucibus integer sem. Odio aliquet mauris sit ut. Tellus, proin diam elementum
-            tincidunt urna tellus.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="roof_tiles-tab" data-toggle="tab" href="#roof_tiles">Черепица</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="gutter-tab" data-toggle="tab" href="#gutter">Водосточная система</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="tile-tab" data-toggle="tab" href="#tile">Фасадная плитка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="insulation-tab" data-toggle="tab" href="#insulation">Изоляция</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="mastics-tab" data-toggle="tab" href="#mastics">Мастики и герметики</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="roof-tab" data-toggle="tab" href="#roof">Скатная кровля</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="stoneware-tab" data-toggle="tab" href="#stoneware">Керамогранит</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="roof_tiles">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-1.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-2.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-5.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-6.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-7.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-8.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="gutter">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-5.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-6.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-7.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-8.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="tile">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#inline">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-5.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-6.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-7.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-8.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="insulation">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-5.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-6.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-7.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-8.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="mastics">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-5.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-6.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-7.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-8.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="roof">
-              <div class="row">
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-3.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-4.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-5.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-6.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-7.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                  <div class="block-picture">
-                    <img src="./images/roof-tiles-8.jpg" alt="черепица">
-                  </div>
-                  <div class="block-text">
-                    <p class="text-up">Черепица Технониколь Hauberk</p>
-                    <p class="text-middle">Accumsan arcu, odio netus pulvinar. Vulputate purus amet sed platea cursus
-                      blandit ultrices orci, magnis. Eu ut.</p>
-                  </div>
-                  <div class="increase">
-                    <a class="buy" href="#modaal-shop">Купить</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="section-partners">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="caption">Наши партнеры</h2>
-          <p class="text">Ut duis faucibus integer sem. Odio aliquet mauris sit ut. Tellus, proin diam elementum
-            tincidunt urna tellus.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="flex-container">
-          <img src="./images/logo-velux.png" alt="логотип">
-          <img src="./images/logo-gexa.png" alt="логотип">
-          <img src="./images/logo-isoroc.png" alt="логотип">
-          <img src="./images/logo-kalevala.png" alt="логотип">
-          <img src="./images/logo-osnovit.png" alt="логотип">
-          <img src="./images/logo-penoplax.png" alt="логотип">
-          <img src="./images/logo-kronospan.png" alt="логотип">
-          <img src="./images/logo-fastengroup.png" alt="логотип">
-          <img src="./images/logo-fakro.png" alt="логотип">
-          <img src="./images/logo-texnonikol.png" alt="логотип">
-          <img src="./images/logo-knauf.png" alt="логотип">
-          <img src="./images/logo-saint-gobain.png" alt="логотип">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="section-object">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h3 class="caption">Объекты, которые мы строили</h3>
-          <p class="text">Ut duis faucibus integer sem. Odio aliquet mauris sit ut. Tellus, proin diam elementum
-            tincidunt urna</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure1.jpg" data-lightbox="home-1.jpg">
-            <img class="thumb-image" src="./images/structure1.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-blue.svg" alt="иконка">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure2.jpg" data-lightbox="home-2.jpg">
-            <img class="thumb-image" src="./images/structure2.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-blue.svg" alt="иконка">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure3.jpg" data-lightbox="home-3.jpg">
-            <img class="thumb-image" src="./images/structure3.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-blue.svg" alt="иконка">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure4.jpg" data-lightbox="home-4.jpg">
-            <img class="thumb-image" src="./images/structure4.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-blue.svg" alt="иконка">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure5.jpg" data-lightbox="home-5.jpg">
-            <img class="thumb-image" src="./images/structure5.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-blue.svg" alt="иконка">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure6.jpg" data-lightbox="home-6.jpg">
-            <img class="thumb-image" src="./images/structure6.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-blue.svg" alt="иконка">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure7.jpg" data-lightbox="home-7.jpg">
-            <img class="thumb-image" src="./images/structure7.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-blue.svg" alt="иконка">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure8.jpg" data-lightbox="home-8.jpg">
-            <img class="thumb-image" src="./images/structure8.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-white.svg" alt="иконка">
-          </a>
-        </div>
-        <div class="col-md-4 col-sm-4 picture">
-          <a href="./images/structure9.jpg" data-lightbox="home-9.jpg">
-            <img class="thumb-image" src="./images/structure9.jpg" alt="дом">
-            <img class="icon" src="./images/icons/icon-blue.svg" alt="иконка">
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="more">
-            <a href="#">Показать еще</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  </section>
-  <section id="section-form">
-    <div class="container">
-      <div class="row justify-content-center">
         <div class="col-lg-12">
-          <form action="#" method="post" enctype="multipart/form-data">
-            <div class="row">
-
-              <div class="col-md-6">
-                <div class="form-container">
-                  <div class="form-block">
-                    <h4 class="caption">Оставьте заявку на сотрудничество</h4>
-                    <h5>Введите ваше имя</h5>
-                    <input type="text" name="text" placeholder="Иванов Иван">
-                    <h5>Номер телефона</h5>
-                    <input type="text" name="tel" placeholder="+7-910-123-45-67">
-                    <h5>Ваше сообщение</h5>
-                    <textarea class="tabl" name="text" placeholder="Введите сообщение" cols="90" rows="8"></textarea>
-                    <div class="button-send">
-                      <button class="button-form" type="submit">Отправить заявку </button>
-                      <p class="text-politics">Отправляя форму вы соглашаетесь с <a href="#">Политикой
-                          конфиденциальности</a> сайта</p>
-                    </div>
-                  </div>
-                </div>
+          <h2>Как это работает?</h2>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <img class="block-pic" src="./images/questionnaire.jpg" alt="questionnaire.jpg">
+        </div>
+        <div class="col-lg-6">
+          <div class="text-block">
+            <h3>Анкетирование</h3>
+            <p class="text-work">Первый этап проходит одинаково для всех: вы заполняете анкету, в
+              которую
+              включены, как привычные вопросы анамнеза, так и вопросы на определение типа личности</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="text-block">
+            <h3>Анализы</h3>
+            <p class="text-work">Проведене следующего этапа зависит от выбранного ранее тарифа. В
+              “Мистике”
+              забор анализов происходит при помощи сверхъестественного оборудования, в “Науке”
+              осуществляется
+              традиционным способом.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="block-pic" src="./images/analyzes.jpg" alt="analyzes.jpg">
+        </div>
+        <div class="col-lg-6">
+          <img class="block-pic" src="./images/results.jpg" alt="questionnaire.jpg">
+        </div>
+        <div class="col-lg-6">
+          <div class="text-block">
+            <h3>Результаты</h3>
+            <p class="text-work"> Получение результатов возможно как в режиме онлайн, через наш сайт или
+              приложение, так и в Выборатории.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="section-tariffs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="line">
+            <h2>Тарифы</h2>
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="col-lg-4">
+            <div class="card-block">
+              <div class="test">
+                <img class="block-pic" src="./images/figure-one.jpg" alt="figure-one.jpg">
               </div>
-              <div class="col-md-5 offset-md-1">
-                <h4 class="caption">Наши контакты</h4>
-                <div class="form-end">
-                  <h6>Выберите город</h6>
-                  <div class="select-container">
-                    <select name="type">
-                      <option value=>Рязань</option>
-                      <option value=>Москва</option>
-                      <option value=>Липецк</option>
-                      <option value=>Тула</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12">
-
-                    <p class="address">Адрес:</p>
-                    <p class="text-middle">ул. Ленина, д. 1, оф. 201</p>
-                    <p class="text-contacts">Телефон:</p>
-                    <div class="row">
-                      <div class="col-lg-6 col-sm-6">
-                        <p class="text-phone">Мобильный:</p>
-                        <a class="text-middle" href="tel:+79101234567"> +7-910-123-45-678</a>
-                        <a class="text-middle" href="tel:+79101234567"> +7-910-123-45-678</a>
-                      </div>
-                      <div class="col-lg-6 col-sm-6">
-                        <p class="text-phone">Городской:</p>
-                        <a class="text-middle" href="tel:+79101234567"> +7-910-123-45-678</a>
-                        <a class="text-middle" href="tel:+79101234567"> +7-910-123-45-678</a>
-                      </div>
-                    </div>
-                    <p class="text-contacts">Режим работы:</p>
-                    <div class="row">
-                      <div class="col-lg-6 col-sm-6">
-                        <p class="text-down">пн-пт:</p>
-                        <p class="text-middle">09:00-18:00</p>
-                      </div>
-                      <div class="col-lg-6 col-sm-6">
-                        <p class="text-down">сб-вс:</p>
-                        <p class="text-middle">10:00-16:00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="card-set">
+                <p class="text-heading">Мистика</p>
+                <p class="text-tariffs">Выбор анализируется на основе традиционных методов: гадание...
+                </p>
+                <a href="/main.html" class="button-gray">запись</a>
               </div>
             </div>
-          </form>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-block even">
+              <img class="block-pic" src="./images/figure-two.jpg" alt="figure-two.jpg">
+              <div class="card-set even">
+                <p class="text-heading">Наука</p>
+                <p class="text-tariffs">Выбор анализируется на основе научнодоказанных методов: анке...
+                </p>
+                <a href="/main.html" class="button-gray">запись</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-block">
+              <img class="block-pic" src="./images/figure-three.jpg" alt="figure-three.jpg">
+              <div class="card-set">
+                <p class="text-heading">Все и сразу</p>
+                <p class="text-tariffs">Выбор анализируется всесторонне, соединены научный и...</p>
+                <a href="/main.html" class="button-gray">запись</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <div id="modaal-shop" style="display:none;">
-    <div class="row">
-      <div class="col-md-6 format">
-        <form action="#" method="post" enctype="multipart/form-data">
-
-          <div class="form-container">
-            <div class="block-modal">
-              <h4 class="caption">Оставьте заявку на сотрудничество</h4>
-              <h5>Введите ваше имя</h5>
-              <input type="text" name="text" placeholder="Иванов Иван">
-              <h5>Номер телефона</h5>
-              <input type="text" name="tel" placeholder="+7-910-123-45-67">
-              <h5>Ваше сообщение</h5>
-              <textarea class="tabl" name="text" placeholder="Введите сообщение" cols="90" rows="4"></textarea>
-              <div class="button-send">
-                <button class="button-form" type="submit">Отправить заявку </button>
-                <p class="text-politics">Отправляя форму вы соглашаетесь с <a href="#">Политикой
-                    конфиденциальности</a> сайта</p>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <div class="picture-modal">
-        </div>
-      </div>
-    </div>
-  </div>
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="flex">
-            <img src="./images/logocompany.png" alt="логотип">
+        <div class="col-lg-12">
+          <div class="block-icons">
+            <a href="#" class="icons"><img src="./images/icons/instagram.svg" alt="instagram.svg"></a>
+            <a href="#" class="icons"><img src="./images/icons/facebook.svg" alt="facebook.svg"></a>
+            <a href="#" class="icons"><img src="./images/icons/tik-tok.svg" alt="tik-tok.svg"></a>
           </div>
-          <div class="footer-content">
-            <div class="footer-list">
-              <div class="flex">
-                <ul>
-                  <li><a href="#section-about-us">О нас</a></li>
-                  <li><a href="#section-capabilities">Преимущества</a></li>
-                  <li><a href="#section-sale">Каталог товаров</a></li>
-                  <li><a href="#section-partners">Наши партнеры</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-right">
-              <a class="footer-call" href="#">Позвонить нам</a>
-              <a class="footer-write" href="#">Написать нам</a>
-            </div>
-          </div>
+          <p class="network">соцсети</p>
         </div>
       </div>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
   </script>
   <script src="./js/lightbox.min.js"></script>
   <script src="./js/modaal.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
+
 </html>

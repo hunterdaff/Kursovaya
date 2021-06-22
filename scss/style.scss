@@ -7,8 +7,68 @@ img {
 html {
   body {
     display: block;
-    font-family: "Golos", sans-serif;
+    font-family: "PT Root UI", sans-serif;
   }
 }
 
-@import "fonts", "menu", "index", "media";
+header {
+  margin-bottom: 48px;
+}
+
+.block {
+  background: #5077FE;
+}
+
+.block-pic {
+  width: 100%;
+}
+
+.line-block {
+  border: 1px solid #5077FE;
+  padding: 20px;
+}
+
+.button-gray {
+  background: #C4C4C4;
+  border: 1px solid #5077FE;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  display: inline-flex;
+  align-items: center;
+
+  letter-spacing: -0.015em;
+  color: #5077FE;
+  border-radius: 6px;
+  flex-direction: row;
+  padding: 15px 90px;
+  text-decoration: none;
+
+  &:hover {
+    background: #fff;
+  }
+}
+
+
+.text-up {
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 173px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #5077FE;
+}
+
+.text-down {
+  font-size: 36px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #5077FE;
+}
+
+.container-fluid {
+  max-width: 1600px;
+}
+
+@import "fonts", "menu", "index", "contacts", "team", "cafe", "events", "main", "media";

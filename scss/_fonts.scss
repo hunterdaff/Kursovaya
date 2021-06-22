@@ -1,21 +1,23 @@
 @font-face {
-  font-family: 'Golos';
-  src: local('Golos Text Regular'),
-    local('GolosText-Regular'),
-    url('./../fonts/Golostextregular.woff2') format('woff2'),
-    url('./../fonts/Golostextregular.woff') format('woff'),
-    url('./../fonts/Golostextregular.ttf') format('truetype');
+  font-family: 'PT Root UI';
+  src: url('./../fonts/PTRootUI-Regular.eot');
+  src: local('PT Root UI Regular'),
+    url('./../fonts/PTRootUI-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/PTRootUI-Regular.woff2') format('woff2'),
+    url('./../fonts/PTRootUI-Regular.woff') format('woff'),
+    url('./../fonts/PTRootUI-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Golos';
-  src: local('Golos Text Bold'),
-    local('GolosText-Bold'),
-    url('./../fonts/Golostextbold.woff2') format('woff2'),
-    url('./../fonts/Golostextbold.woff') format('woff'),
-    url('./../fonts/Golostextbold.ttf') format('truetype');
+  font-family: 'PT Root UI';
+  src: url('./../fonts/PTRootUI-Bold.eot');
+  src: local('PT Root UI Bold'),
+    url('./../fonts/PTRootUI-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./../fonts/PTRootUI-Bold..woff2') format('woff2'),
+    url('./../fonts/PTRootUI-Bold.woff') format('woff'),
+    url('./../fonts/PTRootUI-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }

@@ -1,0 +1,55 @@
+#section-cafe {
+
+    .btn-block {
+        position: absolute;
+        z-index: 100;
+        bottom: 78px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        background: #F2F2F2;
+        border: 1px solid #5077FE;
+        border-radius: 6px;
+        padding: 15px 91px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        align-items: center;
+        letter-spacing: -0.015em;
+        color: #5077FE;
+        text-decoration: none;
+
+        &:hover {
+            background: #5077FE;
+            color: #fff;
+        }
+    }
+}
+
+
+#section-menu {
+    padding-top: 48px;
+
+    h2 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: -0.015em;
+        color: #000000;
+    }
+
+    .card-block {
+        border: 1px solid #5077FE;
+        border-top: none;
+        display: block;
+        text-align: center;
+        border-right: none;
+    }
+
+    .button-gray {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

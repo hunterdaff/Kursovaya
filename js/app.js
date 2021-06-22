@@ -1,14 +1,3 @@
-$ = jQuery;
-import 'bootstrap/js/dist/tab';
-
-import _Fancybox from "@fancyapps/fancybox";
-import noUiSlider from 'nouislider';
-import Swiper, {
-  Navigation,
-  Pagination
-} from 'swiper';
-import _Modaal from "modaal";
-
 // configure Swiper to use modules
 Swiper.use([Navigation, Pagination]);
 
@@ -43,21 +32,21 @@ $(function () {
   document.addEventListener('wpcf7mailsent', function (event) {
     // Письмо отправлено
     // console.log('wpcf7mailsent');
-   
+
     if (event.detail.contactFormId == '91') {
-      ym(69148552,'reachGoal','plan');
+      ym(69148552, 'reachGoal', 'plan');
       gtag('event', 'formSend', {
         'form': 'plan'
       });
     }
     if (event.detail.contactFormId == '5') {
-      ym(69148552,'reachGoal','want');
+      ym(69148552, 'reachGoal', 'want');
       gtag('event', 'formSend', {
         'form': 'want'
       });
     }
     if (event.detail.contactFormId == '93') {
-      ym(69148552,'reachGoal','details');
+      ym(69148552, 'reachGoal', 'details');
       gtag('event', 'formSend', {
         'form': 'details'
       });
