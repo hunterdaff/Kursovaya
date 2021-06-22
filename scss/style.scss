@@ -63,12 +63,9 @@ header {
   margin-bottom: 48px;
 }
 
-// .block {
-//   background: #5077FE;
-// }
-
 .block-pic {
   width: 100%;
+  max-height: 353px;
 }
 
 .line-block {
@@ -122,25 +119,13 @@ header {
   }
 }
 
-.text-up {
-  font-weight: bold;
-  font-size: 144px;
-  line-height: 173px;
-  text-align: center;
-
-  color: #5077FE;
-}
-
-.text-down {
-  font-size: 36px;
-  line-height: 30px;
-  text-align: center;
-
-  color: #5077FE;
-}
-
 .container-fluid {
   max-width: 1600px;
+}
+
+.g-2r,
+.gy-2r {
+  --bs-gutter-y: 2rem;
 }
 
 @import "menu", "index", "contacts", "team", "cafe", "events", "main", "media";

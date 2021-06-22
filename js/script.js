@@ -20,9 +20,7 @@ $(function () {
   const swiper = new Swiper(".Swiper-product", {
     slidesPerView: 3,
     spaceBetween: 20,
-    slidesPerGroup: 3,
     loop: true,
-    loopFillGroupWithBlank: true,
   });
 
   // Мобильное меню
