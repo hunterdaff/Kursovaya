@@ -7,12 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link href="./css/lightbox.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link href="./css/modaal.min.css" rel="stylesheet" />
   <link href="./css/style.css" rel="stylesheet">
   <title>Выборатория</title>
 </head>
@@ -23,7 +20,7 @@
       <div class="container-absolute">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-12">
               <div class="header-content">
                 <div class="flex">
                   <a class="logo" href="/">ВЫБОРАТОРИЯ</a>
@@ -62,24 +59,19 @@
       </nav>
     </div>
   </header>
+
   <section id="section-hero">
     <div class="container-fluid">
       <div class="row justify-content-between">
-        <div class="col-lg-12">
-          <div class="swiper-container mySwiper">
+        <div class="col-12">
+          <div class="swiper-container mainSwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide ss-1">
-              </div>
-              <div class="swiper-slide ss-2">
-              </div>
-              <div class="swiper-slide ss-3">
-              </div>
-              <div class="swiper-slide ss-4">
-              </div>
-              <div class="swiper-slide ss-5">
-              </div>
-              <div class="swiper-slide ss-6">
-              </div>
+              <div class="swiper-slide" style="background-image: url(./../images/slide-one.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(./../images/slide-two.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(./../images/slide-three.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(./../images/slide-four.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(./../images/slide-five.jpg)"></div>
+              <div class="swiper-slide" style="background-image: url(./../images/slide-six.jpg)"></div>
             </div>
             <div class="btn-block">
               <a href="/main.html" class="btn">запись</a>
@@ -89,41 +81,50 @@
       </div>
     </div>
   </section>
+
   <section id="section-about-us">
     <div class="container-fluid">
-      <div class="line">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="block">
+      <div class="row">
+        <div class="col-12">
+          <div class="block-container">
+            <div class="text-container">
               <h2>О Выборатории</h2>
-              <p class="team">Мы — команда высококлассных специалистов, которым<br> доверяют выбор люди
-                уже
-                многие сотни лет </p>
+              <p class="team-text">Мы — команда высококлассных специалистов, которым доверяют выбор люди уже многие
+                сотни лет</p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <p class="text-up">13</p>
-            <p class="text-down">Международных наград</p>
+      </div>
+      <div class="row gx-0">
+        <div class="col-xxl-4">
+          <div class="border-block">
+            <p class="text-number">13</p>
+            <p class="text-desc">Международных наград</p>
           </div>
-          <div class="col-lg-4">
-            <p class="text-up">342</p>
-            <p class="text-down">Постоянных сотрудника</p>
+        </div>
+        <div class="col-xxl-4">
+          <div class="border-block-vertical">
+            <p class="text-number">342</p>
+            <p class="text-desc">Постоянных сотрудника</p>
           </div>
-          <div class="col-lg-4">
-            <p class="text-up">16</p>
-            <p class="text-down">Филиалов по миру</p>
+        </div>
+        <div class="col-xxl-4">
+          <div class="border-block">
+            <p class="text-number">16</p>
+            <p class="text-desc">Филиалов по миру</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section id="section-work">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12">
-          <h2>Как это работает?</h2>
+        <div class="col-12">
+          <div class="border-block">
+            <h2>Как это работает?</h2>
+          </div>
         </div>
       </div>
       <div class="row g-0">
@@ -131,21 +132,18 @@
           <img class="block-pic" src="./images/questionnaire.jpg" alt="questionnaire.jpg">
         </div>
         <div class="col-lg-6">
-          <div class="text-block">
+          <div class="text-block border-block border-top-off border-left-off">
             <h3>Анкетирование</h3>
             <p class="text-work">Первый этап проходит одинаково для всех: вы заполняете анкету, в
-              которую
-              включены, как привычные вопросы анамнеза, так и вопросы на определение типа личности</p>
+              которую включены, как привычные вопросы анамнеза, так и вопросы на определение типа личности</p>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="text-block">
+          <div class="text-block border-block border-right-off">
             <h3>Анализы</h3>
-            <p class="text-work">Проведене следующего этапа зависит от выбранного ранее тарифа. В
-              “Мистике”
-              забор анализов происходит при помощи сверхъестественного оборудования, в “Науке”
-              осуществляется
-              традиционным способом.</p>
+            <p class="text-work">Проведение следующего этапа зависит от выбранного ранее тарифа. В
+              “Мистике” забор анализов происходит при помощи сверхъестественного оборудования, в “Науке”
+              осуществляется традиционным способом.</p>
           </div>
         </div>
         <div class="col-lg-6">
@@ -155,7 +153,7 @@
           <img class="block-pic" src="./images/results.jpg" alt="questionnaire.jpg">
         </div>
         <div class="col-lg-6">
-          <div class="text-block">
+          <div class="text-block border-block border-left-off">
             <h3>Результаты</h3>
             <p class="text-work"> Получение результатов возможно как в режиме онлайн, через наш сайт или
               приложение, так и в Выборатории.</p>
@@ -163,45 +161,53 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
+
   <section id="section-tariffs">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12">
-          <div class="line">
+        <div class="col-12">
+          <div class="border-block">
             <h2>Тарифы</h2>
           </div>
         </div>
-        <div class="row g-0">
-          <div class="col-lg-4">
-            <div class="card-block">
-              <div class="test">
-                <img class="block-pic" src="./images/figure-one.jpg" alt="figure-one.jpg">
-              </div>
-              <div class="card-set">
+      </div>
+      <div class="row gx-0">
+        <div class="col-xxl-4">
+          <div class="card-block">
+            <div class="card-img-block">
+              <img class="block-pic" src="./images/figure-one.jpg" alt="figure-one.jpg">
+            </div>
+            <div class="border-block border-top-off">
+              <div class="card-text-block">
                 <p class="text-heading">Мистика</p>
-                <p class="text-tariffs">Выбор анализируется на основе традиционных методов: гадание...
-                </p>
+                <p class="text-tariffs">Выбор анализируется на основе традиционных методов: гадание...</p>
                 <a href="/main.html" class="button-gray">запись</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card-block even">
+        </div>
+        <div class="col-xxl-4">
+          <div class="card-block">
+            <div class="card-img-block">
               <img class="block-pic" src="./images/figure-two.jpg" alt="figure-two.jpg">
-              <div class="card-set even">
+            </div>
+            <div class="border-block border-top-off border-left-off">
+              <div class="card-text-block">
                 <p class="text-heading">Наука</p>
-                <p class="text-tariffs">Выбор анализируется на основе научнодоказанных методов: анке...
-                </p>
+                <p class="text-tariffs">Выбор анализируется на основе научнодоказанных методов: анке...</p>
                 <a href="/main.html" class="button-gray">запись</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card-block">
+        </div>
+        <div class="col-xxl-4">
+          <div class="card-block">
+            <div class="card-img-block border-right-off">
               <img class="block-pic" src="./images/figure-three.jpg" alt="figure-three.jpg">
-              <div class="card-set">
+            </div>
+            <div class="border-block border-top-off border-left-off">
+              <div class="card-text-block">
                 <p class="text-heading">Все и сразу</p>
                 <p class="text-tariffs">Выбор анализируется всесторонне, соединены научный и...</p>
                 <a href="/main.html" class="button-gray">запись</a>
@@ -215,11 +221,11 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-12">
           <div class="block-icons">
-            <a href="#" class="icons"><img src="./images/icons/instagram.svg" alt="instagram.svg"></a>
-            <a href="#" class="icons"><img src="./images/icons/facebook.svg" alt="facebook.svg"></a>
-            <a href="#" class="icons"><img src="./images/icons/tik-tok.svg" alt="tik-tok.svg"></a>
+            <a href="https://www.instagram.com/" class="icons"><img src="./images/icons/instagram.svg" alt="instagram.svg"></a>
+            <a href="https://www.facebook.com/" class="icons"><img src="./images/icons/facebook.svg" alt="facebook.svg"></a>
+            <a href="https://www.tiktok.com/ru-RU/" class="icons"><img src="./images/icons/tik-tok.svg" alt="tik-tok.svg"></a>
           </div>
           <p class="network">соцсети</p>
         </div>
@@ -231,9 +237,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
   </script>
-  <script src="./js/lightbox.min.js"></script>
-  <script src="./js/modaal.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>

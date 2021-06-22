@@ -12,15 +12,19 @@ $(function () {
     }, 1000);
     return false;
   });
-  var swiper = new Swiper(".mySwiper", {});
 
-  var swiper = new Swiper(".Swiper-product", {
+  const mainswiper = new Swiper(".mainSwiper", {
+    loop: true,
+  });
+
+  const swiper = new Swiper(".Swiper-product", {
     slidesPerView: 3,
     spaceBetween: 20,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
   });
+
   // Мобильное меню
   $('#toggle_menu').click(function () {
     $(this).toggleClass('active');
