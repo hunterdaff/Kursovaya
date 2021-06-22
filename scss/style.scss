@@ -106,13 +106,12 @@ header {
   line-height: 25px;
   display: inline-flex;
   align-items: center;
-
-
   color: #5077FE;
   border-radius: 6px;
   flex-direction: row;
   padding: 15px 90px;
   text-decoration: none;
+  transition: all .3s;
 
   &:hover {
     background: #fff;
