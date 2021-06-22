@@ -1,92 +1,90 @@
 #section-contacts {
-    padding-bottom: 40px;
-    padding-top: 34px;
+  margin-top: 48px;
 
-    h2 {
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 72px;
-        letter-spacing: -0.015em;
-        color: #000000;
+  input,
+  textarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 18px;
+    background: #FFF;
+    border: 1px solid #5077FE;
+    width: 100%;
+    outline: none;
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 30px;
+      color: #000;
+      opacity: 1;
     }
+  }
 
-    input,
-    textarea {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 18px;
-        background: #FFF;
-        border: 1px solid #5077FE;
-        letter-spacing: -0.015em;
-        width: 100%;
-        outline: none;
+  textarea {
+    max-height: 180px;
+  }
 
-        &::placeholder {
-            font-size: 18px;
-            line-height: 30px;
-            color: rgba(0, 0, 0, 0.8);
-        }
-    }
+  .button-gray {
+    margin: 24px;
+  }
 
-    textarea {
-        max-height: 120px;
-    }
+  .text-container {
+    background: #5077FE;
+    border: 1px solid #F8F8F9;
+  }
 
-    .contacts-text {
-        display: flex;
-        flex-direction: column;
-    }
+  h2 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000;
+    padding: 20px 36px;
+    margin: 0;
+  }
 
-    .line {
-        background: #5077FE;
-        border: 1px solid #F8F8F9;
-        padding: 24px;
-    }
+  h3 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000;
+    padding: 20px;
+    margin: 0;
+  }
 
-    .line-right {
-        border: 1px solid #5077FE;
-        padding: 24px;
-        border-left: none;
-    }
-
-    .button-gray {
-        margin-top: 0;
-    }
-
-    .contact {
-        font-size: 36px;
-        line-height: 30px;
-        letter-spacing: -0.015em;
-        color: #000000;
-        text-decoration: none;
-        margin-bottom: 20px;
-    }
+  .contact {
+    font-size: 36px;
+    line-height: 45px;
+    color: #000;
+    text-decoration: none;
+    padding: 28px 36px;
+    display: block;
+  }
 }
 
 #section-map {
-    .map {
-        position: relative;
-    }
+  margin-top: 48px;
 
-    .block-map {
-        position: absolute;
-        top: 212px;
-        left: 135px;
-        background: #FFF;
-        padding: 64px 52px 164px 40px;
-    }
+  .map {
+    position: relative;
+  }
 
-    .text-map {
-        font-weight: bold;
-        font-size: 56px;
-        line-height: 80px;
-        letter-spacing: -0.015em;
-        color: #000000;
-    }
+  .block-map {
+    position: absolute;
+    top: 212px;
+    left: 135px;
+    background: #FFF;
+    padding: 64px 40px;
+  }
 
-    .button-gray {
-        position: absolute;
+  .text-map {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 80px;
+    color: #000;
+    margin-bottom: 45px;
+  }
 
-    }
+  .button-gray {
+    display: inline-block;
+  }
 }

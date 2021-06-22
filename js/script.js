@@ -32,5 +32,3 @@ $(function () {
     $('body').toggleClass('overflow');
   });
 });
-
-$('.buy').modaal();
