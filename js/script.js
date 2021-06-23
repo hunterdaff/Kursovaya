@@ -28,7 +28,12 @@ $(function () {
       1370: {
         slidesPerView: 3
       }
-    }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
   });
 
   // Мобильное меню

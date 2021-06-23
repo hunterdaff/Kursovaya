@@ -134,4 +134,26 @@
     color: #333333;
     margin-bottom: 48px;
   }
+
+  .swiper-container {
+    padding-bottom: 46px;
+
+    .swiper-pagination-bullet {
+      width: 18px;
+      height: 18px;
+      background: #5077FE;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #5077FE;
+    }
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 0;
+
+    .swiper-pagination-bullet {
+      margin: 0 8px;
+    }
+  }
 }

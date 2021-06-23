@@ -47,7 +47,7 @@ header {
           text-decoration: none;
 
           &:hover {
-            color: #FFF;
+            text-decoration: underline;
           }
         }
       }
@@ -67,21 +67,34 @@ header {
     color: #FFF;
     text-decoration: none;
     margin-right: 20px;
+    transition: all .3s;
+
+    &:hover {
+      background: #FFF;
+      border: 1px solid transparent;
+      color: #5077FE;
+    }
   }
 
   .button-record {
     background: #FFF;
-    border: 1px solid #FFF;
+    border: 1px solid transparent;
     border-radius: 6px;
     width: 100%;
     align-items: center;
-    border: none;
     padding: 10px 40px;
     font-size: 15px;
     line-height: 18px;
     display: flex;
     color: #5077FE;
     text-decoration: none;
+    transition: all .3s;
+
+    &:hover {
+      background: #5077FE;
+      border: 1px solid #FFF;
+      color: #FFF;
+    }
   }
 }
 
@@ -112,6 +125,12 @@ header {
     align-items: center;
     color: #5077FE;
     text-decoration: none;
+
+    &:hover {
+      background: #5077FE;
+      border: 1px solid #FFF;
+      color: #FFF;
+    }
   }
 }
 

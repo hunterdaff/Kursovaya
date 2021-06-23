@@ -77,6 +77,8 @@
 
   .map {
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .block-map {
