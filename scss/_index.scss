@@ -161,6 +161,11 @@ header {
     color: #5077FE;
     margin-bottom: 30px;
   }
+
+  .border-block,
+  .border-block-vertical {
+    height: 100%;
+  }
 }
 
 #section-work {
@@ -215,6 +220,12 @@ header {
 
   .card-block {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .border-block {
+      height: 100%;
+    }
   }
 
   .card-img-block {
@@ -241,6 +252,7 @@ header {
 
   .block-pic {
     max-width: 525px;
+    width: 100%;
   }
 }
 
