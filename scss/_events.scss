@@ -29,6 +29,8 @@
 
   .nav-item {
     padding: 48px 0;
+    min-width: 410px;
+    max-width: 100%;
   }
 
   .date {
@@ -65,7 +67,8 @@
 
   .block-content {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .text-block {
@@ -162,14 +165,6 @@
     color: #000;
     margin-bottom: 0;
   }
-
-  // .card-set {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: center;
-  //   border: 1px solid #5077FE;
-  //   padding: 32px;
-  // }
 
   .button-gray {
     margin: 32px auto;

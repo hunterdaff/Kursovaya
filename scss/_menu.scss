@@ -2,7 +2,6 @@
 // Мобильное меню
 // ---------------
 @mixin menu-font {
-  font-family: 'Golos', serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 48px;
@@ -15,12 +14,12 @@ $menu-color-active: #F7F7F5; // Цвет кнопки "крестик"
 $menu-color-link: #F7F7F5; // Цвет ссылок в меню
 $menu-button-height: 27px; // Высота кнопки
 $menu-button-width: 35px; // Ширина кнопки
-$menu-button-top: 36px; // Позиция кнопки
-$menu-button-right: 36px; // Позиция кнопки
+$menu-button-top: 22px; // Позиция кнопки
+$menu-button-right: 22px; // Позиция кнопки
 //----------------
 
-@media only screen and (max-width: 991px),
-only screen and (max-device-width: 991px) {
+@media only screen and (max-width: 1049px),
+only screen and (max-device-width: 1049px) {
   header .button_container {
     display: block !important;
   }
