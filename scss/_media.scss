@@ -1,7 +1,18 @@
+@media only screen and (max-width: 1619px),
+only screen and (max-device-width: 1619px) {
+  #section-souvenirs .card-set {
+    padding: 62px;
+  }
+}
+
 @media only screen and (max-width: 1469px),
 only screen and (max-device-width: 1469px) {
   #section-tariffs .card-text-block {
     padding: 80px;
+  }
+
+  #section-souvenirs .card-set {
+    padding: 30px;
   }
 }
 
@@ -11,6 +22,12 @@ only screen and (max-device-width: 1369px) {
     margin-left: unset;
 
     img {
+      width: 100%;
+    }
+  }
+
+  #section-souvenirs {
+    .block-pic {
       width: 100%;
     }
   }
@@ -24,15 +41,23 @@ only screen and (max-device-width: 1269px) {
 
   #section-conferences .nav-tabs .nav-item {
     border-right: 1px solid #5077FE;
-  }
 
-  #section-conferences .nav-tabs .nav-item:not(:nth-child(even)) {
-    border-top: none;
+    &:not(:nth-child(even)) {
+      border-top: none;
+    }
   }
 }
 
 @media only screen and (max-width: 1199px),
 only screen and (max-device-width: 1199px) {
+  .border-top-xl-off {
+    border-top: none !important;
+  }
+
+  .border-bottom-xl-off {
+    border-bottom: none !important;
+  }
+
   #section-tariffs .card-text-block {
     padding: 36px;
   }
@@ -53,6 +78,16 @@ only screen and (max-device-width: 1199px) {
   #section-contacts textarea {
     max-height: 225px;
   }
+
+  #section-progress {
+    .border-right-off {
+      border-right: 1px solid #5077FE !important;
+    }
+
+    .border-left-off {
+      border-left: 1px solid #5077FE !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 1049px),
@@ -68,10 +103,6 @@ only screen and (max-device-width: 1049px) {
 
 @media only screen and (max-width: 991px),
 only screen and (max-device-width: 991px) {
-
-  // #section-tariffs .card-block {
-  //   flex-direction: row;
-  // }
 
   .border-top-lg-off {
     border-top: none !important;
@@ -128,12 +159,12 @@ only screen and (max-device-width: 991px) {
 
 @media only screen and (max-width: 859px),
 only screen and (max-device-width: 859px) {
-  #section-conferences .nav-tabs .nav-item:not(:first-child) {
-    border-top: none;
-  }
-
   #section-conferences .nav-tabs .nav-item {
     border-left: 1px solid #5077FE;
+
+    &:not(:first-child) {
+      border-top: none;
+    }
   }
 
   #section-work .text-block {
@@ -143,14 +174,15 @@ only screen and (max-device-width: 859px) {
 
 @media only screen and (max-width: 767px),
 only screen and (max-device-width: 767px) {
+  .border-top-md-off {
+    border-top: none !important;
+  }
+
+
   #section-promotion {
     .border-right-off {
       border-right: 1px solid #5077FE !important;
     }
-  }
-
-  .border-top-md-off {
-    border-top: none !important;
   }
 
   #section-work {
@@ -214,18 +246,19 @@ only screen and (max-device-width: 424px) {
     font-size: 36px;
   }
 
-  #section-conferences .nav-tabs .nav-item {
-    min-width: unset;
+  #section-conferences {
+    .nav-tabs .nav-item {
+      min-width: unset;
+    }
 
-  }
+    .date {
+      font-size: 114px;
+    }
 
-  #section-conferences .date {
-    font-size: 114px;
-  }
-
-  #section-conferences .time {
-    font-size: 92px;
-    line-height: 1.5;
+    .time {
+      font-size: 92px;
+      line-height: 1.5;
+    }
   }
 
   #section-input input {

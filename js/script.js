@@ -18,9 +18,17 @@ $(function () {
   });
 
   const swiper = new Swiper(".Swiper-product", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
+    breakpoints: {
+      860: {
+        slidesPerView: 2,
+      },
+      1370: {
+        slidesPerView: 3
+      }
+    }
   });
 
   // Мобильное меню
