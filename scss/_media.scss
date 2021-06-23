@@ -69,6 +69,14 @@ only screen and (max-device-width: 991px) {
   //   flex-direction: row;
   // }
 
+  .border-top-lg-off {
+    border-top: none !important;
+  }
+
+  .border-bottom-lg-off {
+    border-bottom: none !important;
+  }
+
   #section-tariffs {
     .block-pic {
       max-width: unset;
@@ -85,6 +93,20 @@ only screen and (max-device-width: 991px) {
 
   #section-work .text-block {
     padding: 0 20px;
+  }
+
+  #section-menu {
+    .block-pic {
+      width: 100%;
+    }
+
+    .border-right-off {
+      border-right: 1px solid #5077FE !important;
+    }
+
+    .border-left-off {
+      border-left: 1px solid #5077FE !important;
+    }
   }
 
 }
@@ -141,6 +163,15 @@ only screen and (max-device-width: 575px) {
   #section-conferences .time {
     font-size: 114px;
     line-height: 1.5;
+  }
+
+  #section-cafe .btn-block {
+    bottom: 50%;
+    transform: translateY(50%);
+
+    .btn {
+      padding: 15px 45px;
+    }
   }
 }
 

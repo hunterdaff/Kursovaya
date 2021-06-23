@@ -5,7 +5,7 @@
     position: absolute;
     z-index: 100;
     bottom: 78px;
-    width: 100%;
+    width: calc(100% - var(--bs-gutter-x));
     text-align: center;
   }
 
