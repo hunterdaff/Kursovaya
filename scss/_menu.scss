@@ -2,12 +2,13 @@
 // Мобильное меню
 // ---------------
 @mixin menu-font {
+  font-family: "PT Root UI", sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 48px;
 }
 
-$menu-color-overlay: #222058; // Цвет фона оверлея
+$menu-color-overlay: #5077FE; // Цвет фона оверлея
 $menu-opacity-overlay: 0.99; // Прозрачность фона оверлея
 $menu-color-button: #F7F7F5; // Цвет кнопки "3 полоски"
 $menu-color-active: #F7F7F5; // Цвет кнопки "крестик"

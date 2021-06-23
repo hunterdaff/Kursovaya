@@ -112,15 +112,13 @@ only screen and (max-device-width: 575px) {
 
 @media only screen and (max-width: 424px),
 only screen and (max-device-width: 424px) {
-  // header .header-content {
-  //   justify-content: flex-start;
-  //   padding: 30px;
-  // }
+  header .logo {
+    font-size: 36px;
+  }
 
-  #section-conferences {
-    .nav-item {
-      min-width: unset;
-    }
+  #section-conferences .nav-tabs .nav-item {
+    min-width: unset;
+
   }
 
   #section-conferences .date {
