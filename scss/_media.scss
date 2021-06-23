@@ -134,16 +134,10 @@ only screen and (max-device-width: 991px) {
     .block-pic {
       width: 100%;
     }
-
-    .border-right-off {
-      border-right: 1px solid #5077FE !important;
-    }
-
-    .border-left-off {
-      border-left: 1px solid #5077FE !important;
-    }
   }
 
+  #section-menu,
+  #section-team,
   #section-input {
 
     .border-right-off {
@@ -268,5 +262,10 @@ only screen and (max-device-width: 424px) {
       margin-left: 0;
       margin-top: 20px;
     }
+  }
+
+  #section-team .text-pic {
+    width: 100%;
+    max-width: unset;
   }
 }
